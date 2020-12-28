@@ -1,2 +1,2 @@
 # leetcode_training
-乐扣刷题
+力扣刷题
