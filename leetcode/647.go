@@ -19,7 +19,8 @@ func countSubstrings(s string) int {
 	}
 
 	res := length
-	for right := 0; right < length; right++ {
+	for right := 1; right < length; right++ {
+		// 初始时刻
 		for left := 0; left < right; left++ {
 			// 左右相等，并且长度小于2或者前面的动归为true
 			if s[left] == s[right] && (right-left <= 2 || dp[left+1][right-1]) {
